@@ -1,15 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-.form {
-  position: relative;
-  z-index: 1;
-  background: #f2eef5;
-  max-width: 200px;
-  max-height: 2000px;
-  margin: 0 auto 100px;
-  padding: 200px;
-  text-align: center;
-  box-shadow: 2 4 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-};
+
 .container {
 	background-color: #fff;
 	border-radius: 10px;
@@ -21,7 +11,10 @@
 	min-height: 480px;
 }
 span {
-	font-size: 12px;
+	font-size: 20px;
+}
+p{
+  font-size: 17px;
 }
 .social-container a {
 	border: 1px solid #DDDDDD;

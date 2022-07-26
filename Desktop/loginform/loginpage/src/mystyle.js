@@ -1,4 +1,4 @@
-
+import background from "./image.jpg";
 const mystyle={
 
     color:"black",
@@ -18,4 +18,17 @@ const mystyle={
       transition: "transform 80ms ease-in"
   };
 
-  export  {mystyle ,login};
+  const form={
+    position: 'relative',
+  zIndex: '1',
+  backgroundImage: `url(${background})` ,
+   maxWidth: '200px',
+  maxHeight: '2000px',
+  margin: '0 auto 100px',
+  padding: '200px',
+  textAlign: 'center',
+  boxShadow: '2 4 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)',
+
+  }
+
+  export  {mystyle ,login,form};

@@ -1,26 +1,28 @@
 import React ,{useState} from 'react';
 import index from './index.css';
-import {mystyle,login} from'./mystyle';
-import image from './image.jpg';
+import {mystyle,login,form} from'./mystyle';
 
     <div>
       <mystyle />
       <login/>
+      <form/>
     </div>
 
 const App=()=>{
-  const[email,setEmail]=useState("");
-  const[password,setPassword]=useState("");
-  const[dataInput,setdataInput]=useState("");
+  const[email,setEmail]=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const[password,setPassword]=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const[dataInput,setdataInput]=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
 
-  const submitThis=()=>{
-    const info={email:email,password:password,dataInput:dataInput};
-    setdataInput([info]);
-  }
+ 
+   const submitThis=()=>{
+     const info={email:email,password:password,dataInput:dataInput};
+     setdataInput([info]);
+    }
+    
   return(
     
-    <div class ='form'>
-       <p>Please enter your credentials to login.</p>
+    <div style={form}>
+       <p >Please enter your credentials to login.</p>
       <form action=""onSubmit={submitThis}>
       <h1>Login</h1>
 <div class="social-container">
@@ -47,4 +49,5 @@ const App=()=>{
    
   
 }
-export default App
+
+export default App;
